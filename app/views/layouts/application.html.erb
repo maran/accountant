@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accountant</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <% if user_signed_in?%>
+    <p>Signed in as: </p>
+    <p><%= current_user.email %></p>
+    <p><%= link_to "Sign out", destroy_user_session_path, :method=>:delete%></p>
+    <% if current_user.admin?%>
+        <p><%= link_to "Admin panel", admin_index_path %></p>
+        <p><%= link_to "User panel", user_index_path %></p>
+    <% end %>
+  <%end%>
+<%= flash[:notice]%>
+<%= yield %>
+
+</body>
+</html>
