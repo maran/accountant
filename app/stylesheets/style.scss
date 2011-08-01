@@ -1,0 +1,45 @@
+$main-color:  #FAFAFA;
+$header-color: #0025F9;
+$sign_in_text_color: #FAFAFA;
+$border-color: #647AFA;
+
+@mixin rounded-corners($radius) {  
+  border-radius: $radius;  
+  -moz-border-radius: $radius;  
+  -webkit-border-radius: $radius;  
+} 
+
+body {  
+  margin: 0;  
+  padding: 0; 
+  height:100%; 
+  background-color: $main-color;  
+  font-family: verdana;  
+  font-size: 14px;  
+  p {
+    color: #4aa333;
+  }
+} 
+#page {
+  min-width:960px;
+	min-height: 100%; 
+	padding: 0;
+} 
+#yield {
+  margin-top: 100px;
+ 
+}
+.simple_form {
+  
+  label {
+    width: 30px;
+    text-align: left;
+    
+    
+  }
+  input {
+    margin-left: 30px; 
+   
+}
+  
+}

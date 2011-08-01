@@ -1,6 +1,11 @@
 Accountant::Application.routes.draw do
   devise_for :user
-  resources :user 
+  resources :user
+  resources :expenses, :categories  
+  
+  namespace :user do
+    resources :expenses
+  end
   resources :admin
   
   # The priority is based upon order of creation:

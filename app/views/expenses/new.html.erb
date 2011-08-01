@@ -1,0 +1,12 @@
+<h2>New expense</h2>
+
+<%= simple_form_for @expense do |f| %>
+  <%= f.input :name %></br>
+  <%= f.input :price %></br>
+  <%= f.input :paid, :as => :check_boxes %></br>
+  <%= f.input :monthly, :as => :check_boxes %></br>
+  <%= f.association :products, :label => 'Categories' %>
+  <%= link_to "Add new category", new_category_path %>
+  </br>
+  <%= f.button :submit %>
+<% end %>

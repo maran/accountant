@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'simple_form'
 gem 'inherited_resources'
 gem 'devise'
+gem 'sass'
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fafafa;
+  font-family: verdana;
+  font-size: 14px; }
+  body p {
+    color: #4aa333; }
+
+#page {
+  min-width: 960px;
+  min-height: 100%;
+  padding: 0; }
+
+#yield {
+  margin-top: 100px; }
+

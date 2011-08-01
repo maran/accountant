@@ -1,1 +1,13 @@
-asldfjaslfjsljf;slaj
+<h2>Expenses list</h2>
+<% if @user.expenses %>
+  <% @user.expenses.each do |expense| %>
+    <%= expense.name %>
+    <%= expense.price %>
+    <%= expense.paid %>
+    <%= expense.monthly %>
+  <%end%>
+<% else %>
+  <p> You don't have any expenses, good for you! </p>
+  
+<% end %>
+<p><%= link_to "Add new expense", new_expense_path %></p>

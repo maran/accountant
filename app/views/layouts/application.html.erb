@@ -7,17 +7,20 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <% if user_signed_in?%>
-    <p>Signed in as: </p>
-    <p><%= current_user.email %></p>
-    <p><%= link_to "Sign out", destroy_user_session_path, :method=>:delete%></p>
-    <% if current_user.admin?%>
-        <p><%= link_to "Admin panel", admin_index_path %></p>
-        <p><%= link_to "User panel", user_index_path %></p>
-    <% end %>
-  <%end%>
-<%= flash[:notice]%>
-<%= yield %>
-
+  <div id = "page">
+      <% if user_signed_in?%>
+      <p>Signed in as: </p>
+      <p><%= current_user.email %></p>
+      <p><%= link_to "Sign out", destroy_user_session_path, :method=>:delete%></p>
+      <% if current_user.admin?%>
+          <p><%= link_to "Admin panel", admin_index_path %></p>
+          <p><%= link_to "User panel", user_index_path %></p>
+      <% end %>
+    <%end%>
+  <%= flash[:notice]%>
+  <div id = "yield">
+    <center><%= yield %> </center>
+  </div>
+</div>
 </body>
 </html>
