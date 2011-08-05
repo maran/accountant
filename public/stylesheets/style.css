@@ -11,8 +11,49 @@ body {
 #page {
   min-width: 960px;
   min-height: 100%;
-  padding: 0; }
+  margin-top: -14px;
+  padding: 0px; }
+
+#header {
+  background: #5a0000;
+  height: 80px;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid black; }
+  #header a {
+    color: #fafafa;
+    text-decoration: none; }
+    #header a:hover {
+      color: #fafafa;
+      text-decoration: none; }
+  #header h12 {
+    color: #A65300; }
+
+#signed_in {
+  float: left;
+  padding-top: 35px; }
+  #signed_in p {
+    color: #fafafa;
+    display: inline;
+    padding: 5px; }
+
+#admin_panel {
+  margin: 25px;
+  padding: 5px;
+  display: inline;
+  float: right; }
+  #admin_panel h2 {
+    display: inline; }
+    #admin_panel h2 a {
+      color: #fafafa;
+      display: inline;
+      padding: 5px; }
 
 #yield {
   margin-top: 100px; }
 
+.simple_form label {
+  width: 30px;
+  text-align: left; }
+.simple_form input {
+  margin-left: 30px; }

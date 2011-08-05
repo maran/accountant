@@ -5,8 +5,4 @@ class ApplicationController < ActionController::Base
       redirect_to user_session_path, :notice => "Login first!"
     end
   end
-  
-  def which_user
-      @user = current_user
-  end
 end

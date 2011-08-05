@@ -1,10 +1,13 @@
 class ExpensesController < InheritedResources::Base
-  before_filter :which_user
-  actions :new,:create
+  actions :new, :create
   
   def create
-    @expense = @user.expenses.create(params[:expense])
-    redirect_to user_path(@user)
+    @expense = current_user.expenses.create(params[:expense])
+    redirect_to user_path(current_user)
   end
- 
+  
+  protected
+  def begin_of_association_chain
+      @current_user    
+  end
 end

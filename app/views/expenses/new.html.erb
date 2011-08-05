@@ -7,6 +7,7 @@
   <%= f.input :monthly, :as => :check_boxes %></br>
   <%= f.association :products, :label => 'Categories' %>
   <%= link_to "Add new category", new_category_path %>
+  <%= link_to "Back", root_path%>
   </br>
   <%= f.button :submit %>
 <% end %>

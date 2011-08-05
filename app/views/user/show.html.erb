@@ -1,5 +1,5 @@
-<% @user.expenses.each do |expense|%>
+<% current_user.expenses.each do |expense|%>
   <%= expense.name %>
   <%= expense.price %>
 <%end%>
-<p><%= link_to "Back", user_index_path %> </p>
+<p><%= link_to "Back", root_path %> </p>

@@ -1,6 +1,6 @@
 $main-color:  #FAFAFA;
-$header-color: #0025F9;
-$sign_in_text_color: #FAFAFA;
+$header-color: #5A0000;
+$sign_in_text_color: #A6A6A6;
 $border-color: #647AFA;
 
 @mixin rounded-corners($radius) {  
@@ -23,8 +23,51 @@ body {
 #page {
   min-width:960px;
 	min-height: 100%; 
-	padding: 0;
+  margin-top: -14px;
+	padding: 0px;
 } 
+#header {
+  background: $header-color;
+  height: 80px;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid darken($header-color,20%);  a {  
+       color: $main-color;  
+       text-decoration: none;
+        &:hover {   
+            color: $main-color;
+            text-decoration: none;  
+        }  
+    } 
+  h12{
+    color: #A65300;
+  } 
+}
+#signed_in {
+  float: left;
+  padding-top: 35px;
+  p {
+    color: $main-color;
+    display: inline;
+    padding: 5px;
+  }
+
+}
+#admin_panel {
+  margin: 25px;
+  padding: 5px;
+  display: inline;
+  float: right;
+  
+  h2 {
+      display: inline;
+      a { 
+          color: $main-color;
+          display: inline;
+          padding: 5px;
+      }
+  }
+}
 #yield {
   margin-top: 100px;
  

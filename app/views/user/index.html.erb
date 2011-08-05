@@ -1,10 +1,12 @@
 <h2>Expenses list</h2>
-<% if @user.expenses %>
-  <% @user.expenses.each do |expense| %>
+
+<% if current_user.expenses %>
+  <% current_user.expenses.each do |expense| %>
     <%= expense.name %>
     <%= expense.price %>
     <%= expense.paid %>
     <%= expense.monthly %>
+  </br>
   <%end%>
 <% else %>
   <p> You don't have any expenses, good for you! </p>

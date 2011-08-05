@@ -1,10 +1,17 @@
-1312214486
+1312572481
 AddUserIdToExpense	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	class AddUserIdToExpense 
+ApplicationController	/media/Data/Work/accountant/app/controllers/application_controller.rb	class ApplicationController 
 CategoriesController	/media/Data/Work/accountant/app/controllers/categories_controller.rb	class CategoriesController 
 CategoriesControllerTest	/media/Data/Work/accountant/test/functional/categories_controller_test.rb	class CategoriesControllerTest 
 CategoriesHelper	/media/Data/Work/accountant/app/helpers/categories_helper.rb	module CategoriesHelper
 CategoriesHelperTest	/media/Data/Work/accountant/test/unit/helpers/categories_helper_test.rb	class CategoriesHelperTest 
+Category	/media/Data/Work/accountant/app/models/category.rb	class Category 
 ExpensesController	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	class ExpensesController 
+UserController	/media/Data/Work/accountant/app/controllers/user_controller.rb	class UserController 
+begin_of_association_chain	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def begin_of_association_chain
+check_admin	/media/Data/Work/accountant/app/controllers/application_controller.rb	  def check_admin
+create	/media/Data/Work/accountant/app/controllers/categories_controller.rb	  def create
 create	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def create
 down	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	  def self.down
+new	/media/Data/Work/accountant/app/controllers/categories_controller.rb	  def new
 up	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	  def self.up

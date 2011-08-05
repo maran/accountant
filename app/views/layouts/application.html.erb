@@ -8,16 +8,24 @@
 </head>
 <body>
   <div id = "page">
-      <% if user_signed_in?%>
-      <p>Signed in as: </p>
-      <p><%= current_user.email %></p>
-      <p><%= link_to "Sign out", destroy_user_session_path, :method=>:delete%></p>
-      <% if current_user.admin?%>
-          <p><%= link_to "Admin panel", admin_index_path %></p>
-          <p><%= link_to "User panel", user_index_path %></p>
-      <% end %>
-    <%end%>
-  <%= flash[:notice]%>
+    <% if user_signed_in?%>
+    <div id = "header" >
+       <div id = "signed_in">
+            <p>Signed in as: </p>
+            <h12><%= current_user.email %></h12>
+            <p><%= link_to "Sign out", destroy_user_session_path, :method=>:delete%></p>
+       </div>
+       <div id = "admin_panel">
+            <% if current_user.admin?%>
+                <h2><%= link_to "Admin panel", admin_index_path %></h2>
+                <h2><%= link_to "User panel", root_path %></h2>
+            <% end %>
+       </div>
+       <%end%>
+    </div>
+  <div id = "notice">
+       <%= flash[:notice]%>
+  </div>
   <div id = "yield">
     <center><%= yield %> </center>
   </div>
