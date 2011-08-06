@@ -1,4 +1,4 @@
-1312572481
+1312636747
 AddUserIdToExpense	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	class AddUserIdToExpense 
 ApplicationController	/media/Data/Work/accountant/app/controllers/application_controller.rb	class ApplicationController 
 CategoriesController	/media/Data/Work/accountant/app/controllers/categories_controller.rb	class CategoriesController 
@@ -10,8 +10,8 @@ ExpensesController	/media/Data/Work/accountant/app/controllers/expenses_controll
 UserController	/media/Data/Work/accountant/app/controllers/user_controller.rb	class UserController 
 begin_of_association_chain	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def begin_of_association_chain
 check_admin	/media/Data/Work/accountant/app/controllers/application_controller.rb	  def check_admin
-create	/media/Data/Work/accountant/app/controllers/categories_controller.rb	  def create
 create	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def create
 down	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	  def self.down
-new	/media/Data/Work/accountant/app/controllers/categories_controller.rb	  def new
+edit	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def edit
+new	/media/Data/Work/accountant/app/controllers/expenses_controller.rb	  def new
 up	/media/Data/Work/accountant/db/migrate/20110801150108_add_user_id_to_expense.rb	  def self.up

@@ -1,0 +1,13 @@
+<%= simple_form_for @expense do |f| %>
+  <%= f.input :name %></br>
+  <%= f.input :price %></br>
+  <%= f.input :paid, :as => :radio %></br>
+  <%= f.input :monthly, :as => :radio %></br>
+  <%= fields_for @category do |category_form| %>
+    <%= category_form.label :Name%>
+    <%= category_form.text_field :name %>
+  <% end%>
+  </br>
+  </br>
+  <%= f.button :submit %>
+<% end %>

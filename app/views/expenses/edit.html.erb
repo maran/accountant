@@ -1,0 +1,11 @@
+<%= render 'form'%>
+
+<%= @product.id%>
+
+</br>
+<% if @category %>
+    <%= @category.name%>
+    
+<% else %>
+    Need to add category
+<% end %>

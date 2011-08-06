@@ -1,10 +1,4 @@
-class CategoriesController < InheritedResources
-
-  def new
-    
-  end
+class CategoriesController < InheritedResources::Base
+  actions :new, :create
   
-  def create
-    
-  end
 end

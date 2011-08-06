@@ -1,0 +1,9 @@
+<h2>Add New Category</h2>
+
+<%= simple_form_for @category do |f| %>
+  <%= f.input :name %></br>
+  
+  <%= link_to "Back", root_path%>
+  </br>
+  <%= f.button :submit %>
+<% end %>
