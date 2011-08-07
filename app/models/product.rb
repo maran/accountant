@@ -1,4 +1,4 @@
 class Product < ActiveRecord::Base
-    belongs_to :expenses
-    belongs_to :categories
+    belongs_to :expense
+    belongs_to :category
 end
